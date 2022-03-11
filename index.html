@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bookmark</title>
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+	<header class="container my-5 ">
+		<div>
+			<h3>Bookmarker</h3>
+		</div>
+	</header>
+
+	<div class="container cont">
+		<div class="well my-5">
+			<div class="column">
+				<h2>Bookmark your favorite sites </h2>
+				<p>Site Name</p>
+				<input id="siteName" placeholder="Bookmark Name" type="text">
+				<p class="alert alert-error m-auto" id="nameError" style="display: none;">Name is required</p>
+				<p>Site URL</p>
+				<input id="siteUrl" placeholder="website URL" type="text">
+				<p class="alert alert-error m-auto" id="urlError" style="display: none;">URL is required</p>
+				<div class="m-auto">
+					<button class="btn btn-primary my-3" onclick="submit()">Submit</button>
+				</div>
+			</div>
+		</div>
+		<div class="container wall" id="sites">
+
+		</div>
+
+	</div>
+
+	<div class="container" id="sites">
+
+	</div>
+
+	<footer>
+		<div class="container my-4">
+			<p>© 2019 Bookmarker Inc.</p>
+		</div>
+	</footer>
+
+
+	<script src="js/bookmarker.js"></script>
+</body>
+
+</html>
